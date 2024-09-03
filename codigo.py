@@ -9,14 +9,22 @@ print("| | | | | | | | | | | | | | | |")
 print("INICIAR SECION (2)")
 opcion = str(input("INGRESE UNA OPCION: "))
 
-if opcion == "1":
 
-      print("sigiente codigo")      
+if opcion == "1":
+      print("CARGANDO...")
+      print("sigiente codigo") 
+           
 elif opcion == "2":
-        
+        print("CARGANDO...")
         print("siguiente codigo")
+        
        
 else:
-    print("INGRESE UNA OPCION CORRECTA")    
-
-print("CARGANDO...")
+       cuenta = 3
+       while cuenta > 0:
+           cuenta -= 1
+           print("INGRESE UNA OPCION VALIDAD")
+        
+       
+        
+print("GRACIAS")
