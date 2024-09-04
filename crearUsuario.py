@@ -1,5 +1,3 @@
-#Este espacio se ha diseñado para registrar nuevos crearUsuario
-
 # Este espacio se ha diseñado para registrar nuevos usuarios
 
 print("===============================================")
@@ -39,5 +37,18 @@ def crear_usuario():
     
     print(f"Usuario {nombre} registrado con éxito.")
 
-# Llamar a la función para crear un usuario
-crear_usuario()
+
+# Bucle para permitir la creación de múltiples usuarios
+while True:
+    crear_usuario()
+    
+    continuar = input("¿Deseas crear otro usuario? (sí/no): ").strip().lower()
+    
+    # Si el usuario escribe "no", el bucle termina
+    if continuar == "no":
+        break
+
+# Mostrar todos los usuarios registrados
+print("\nUsuarios registrados:")
+for nombre, datos in crearUsuario.items():
+    print(f"Nombre: {nombre}, ID: {datos['ID']}, Correo: {datos['Correo']}")
